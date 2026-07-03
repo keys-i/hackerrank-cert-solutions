@@ -1,69 +1,102 @@
-# Prerequisites
-*.d
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
-build/
-Build/
-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
+# Editors / IDEs
+.vscode/
+.idea/
 *.swp
+*.swo
+*.sublime-workspace
 
-# vcpkg
-vcpkg_installed/
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
 
-# debug information files
-*.dwo
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# test output & cache
-Testing/
+# Node / JavaScript / Angular / React
+node_modules/
+dist/
+build/
+coverage/
+.angular/cache/
 .cache/
+.parcel-cache/
+.next/
+out/
+vite.config.*.timestamp-*
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+htmlcov/
+
+# Java
+*.class
+target/
+.gradle/
+build/
+out/
+*.jar
+*.war
+*.ear
+
+# C#
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.csproj.user
+
+# Go
+*.exe
+*.test
+*.out
+coverage.out
+go.work.sum
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# SQL / local databases / dumps
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.dump
+
+# General compiled / temp files
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+*.zip
+*.tar
+*.tar.gz
