@@ -1,0 +1,46 @@
+{
+  "name": "products-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bun run check",
+    "check": "node --check \"app.js\" && node --check \"connection.js\" && node --check \"controllers/products.js\" && node --check \"models/products.js\" && node --check \"routes/index.js\" && node --check \"routes/products.js\" && node --check \"test/index.spec.js\"",
+    "install:sqlite3": "if [ -d node_modules/sqlite3 ]; then (cd node_modules/sqlite3 && ../../node_modules/.bin/prebuild-install -r napi || ../../node_modules/.bin/node-gyp rebuild); fi",
+    "start": "bun bin/www",
+    "test": "bun run install:sqlite3 && PORT=8000 mocha --timeout 20000 \"test/**/*.js\" --reporter mocha-multi-reporters --reporter-options configFile=config.json --exit"
+  },
+  "dependencies": {
+    "bluebird": "3.7.2",
+    "cookie-parser": "1.4.7",
+    "debug": "4.4.3",
+    "express": "5.2.1",
+    "morgan": "1.11.0",
+    "pug": "3.0.4",
+    "sequelize": "6.37.8",
+    "sqlite3": "6.0.1"
+  },
+  "devDependencies": {
+    "bluebird": "3.7.2",
+    "supertest": "7.2.2",
+    "mocha": "11.7.6",
+    "mocha-junit-reporter": "2.2.1",
+    "chai": "4.5.0",
+    "chai-http": "4.4.0",
+    "mocha-multi-reporters": "1.5.1"
+  },
+  "engines": {
+    "node": ">=24.0.0",
+    "bun": ">=1.3.14"
+  },
+  "packageManager": "bun@1.3.14",
+  "overrides": {
+    "diff": "9.0.0",
+    "glob": "13.0.6",
+    "js-yaml": "4.2.0",
+    "serialize-javascript": "7.0.5",
+    "uuid": "14.0.0"
+  },
+  "trustedDependencies": [
+    "sqlite3"
+  ]
+}
