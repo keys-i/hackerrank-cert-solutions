@@ -1,0 +1,12 @@
+[submodule "node/basic/1"]
+	path = certs/node/basic/1
+	url = https://git-rba.hackerrank.com/git/35f53b7a-0935-4bcd-9432-d88102dc8644-v2
+[submodule "node/basic/2"]
+	path = certs/node/basic/2
+	url = https://git-rba.hackerrank.com/git/25b5a353-229d-4717-9445-e4a972beb8aa-v2
+[submodule "node/intermediate/1"]
+	path = certs/node/intermediate/1
+	url = https://git-rba.hackerrank.com/git/bb67ecd5-2a70-4cd5-abc2-a61d348905fb-v2
+[submodule "node/intermediate/2"]
+	path = certs/node/intermediate/2
+	url = https://git-rba.hackerrank.com/git/8f7e12f0-0a60-47b6-b9eb-ef54ec4daf20-v2
